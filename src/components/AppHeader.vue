@@ -36,12 +36,20 @@ export default {
 </script>
 
 <template>
+    <!-- // Container con Background  -->
     <div class="headerBack">
+        <!-- //Opacity layer -->
         <div class="layer"></div>
+        <!-- ***/Opacity layer -->
+
+        <!-- //Container Top dell'Header -->
         <div class="headerTop">
+            <!-- //LOGO Header left -->
             <div class="logo">
                 <img src="../assets/img/footer-logo-1.png" alt="">
             </div>
+            <!-- ***/LOGO Header left -->
+            <!-- //Voci nav messe dinamicamente -->
             <nav class="navigazione">
                 <ul>
                     <li v-for="(link, index) in links" :key="index">
@@ -49,35 +57,49 @@ export default {
                     </li>
                 </ul>
             </nav>
+            <!-- ***/Voci nav messe dinamicamente -->
+            <!-- //Container icone  -->
             <div class="icone">
                 <i class="fas fa-search"></i>
                 <i class="far fa-clipboard">
+                    <!-- //Icona quantita carrello -->
                     <div class="cart"> 0 </div>
+                    <!-- ***/Icona quantita carrello -->
                 </i>
                 <!-- <div class="qnt">0</div> -->
                 <i class="fas fa-bars"></i>
             </div>
+            <!-- ***/Container icone -->
         </div>
+        <!-- ***/Container Top dell'Header -->
+
+        <!-- Container parte centrale dell'Header -->
         <div class="headerCenter">
             <h1>Contemporary Ideas</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Eligendi quis natus totam veniam, commodi dolorum inventore,
                 deleniti quasi laborum obcaecati blanditiis libero voluptatem error aut
                 repudiandae facilis architecto ex? Blanditiis?</p>
+            <!-- //Container link registrazione -->
             <div class="register">
-                <!-- <div> -->
+                <!-- //Link registrazione -->
                 <p class="now"><a href=""> Register Now</a></p>
-                <!-- </div> -->
+                <!-- ***/Link registrazione -->
             </div>
+            <!-- ***/Container link registrazione -->
         </div>
+        <!-- ***/Container parte centrale dell'Header -->
+
+        <!-- Container parte inferiore Header -->
         <div class="headerBottom">
             <div v-for="n in 3" :key="n" class="circles">
-                {{ n.cerchio }}
+                {{ n.circles }}
                 <div class="innercircle"></div>
             </div>
         </div>
+        <!-- ***/Container parte inferiore Header -->
     </div>
-
+    <!-- ***/ Container con Background  -->
 </template>
 
 <style lang="scss" scoped>

@@ -13,8 +13,9 @@ export default {
 
 <template>
     <section>
+        <!-- //Container Delle icone per info -->
         <div class="infobar">
-
+            <!-- //Container layout icone -->
             <div class="infoContainer">
                 <div class="icons">
                     <img src="../assets/img/h5-custom-icon-1.png" alt="">
@@ -41,7 +42,11 @@ export default {
                     <h3> DIY&Craft </h3>
                 </div>
             </div>
+            <!-- ***/Container layout icone -->
         </div>
+        <!-- ***/Container Delle icone per info -->
+
+
         <div class="sectionText">
             <h1>The Trusted Name <br> for In-Home Tutoring.</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis autem, eveniet omnis fugiat alias

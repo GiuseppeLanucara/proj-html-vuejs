@@ -1,10 +1,10 @@
 <script>
-
+// import icons from '../data/icons.js'
 export default {
     name: 'MainFirst',
     data() {
         return {
-
+            // icons: icons
         }
     }
 }
@@ -17,6 +17,10 @@ export default {
         <div class="infobar">
             <!-- //Container layout icone -->
             <div class="infoContainer">
+                <!-- <div v-for="(icon, index) in icons" :key="index" class="icons">
+                    <img :src="(`../img/${icon.img}`)" alt="">
+                    <h3> {{icon.text}} </h3>
+                 </div> -->
                 <div class="icons">
                     <img src="../assets/img/h5-custom-icon-1.png" alt="">
                     <h3> Languages </h3>
@@ -46,7 +50,7 @@ export default {
         </div>
         <!-- ***/Container Delle icone per info -->
 
-
+        <!-- //Sezione testo  -->
         <div class="sectionText">
             <h1>The Trusted Name <br> for In-Home Tutoring.</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis autem, eveniet omnis fugiat alias
@@ -54,6 +58,9 @@ export default {
                 optio temporibus voluptas?</p>
             <p class="moreInfo">Learn MORE</p>
         </div>
+        <!-- ***/Sezione testo  -->
+
+        <!-- //jumbotron image -->
         <div class="jumbotron">
             <img src="../assets/img/h5-img-1.jpg" alt="">
             <div class="top1">
@@ -61,22 +68,35 @@ export default {
                 top
             </div>
         </div>
+        <!-- ***/jumbotron image  -->
+
+        <!-- //Sezione mappa mondo e scritta a destra  -->
         <div class="worldSection">
+            <!-- //TOP laterale -->
             <div class="top2">
                 <i class="fas fa-angle-up"></i>
                 top
             </div>
+            <!-- ***/TOP laterale -->
+
+            <!-- //Container sezione -->
             <div class="small">
+                <!-- //Parte sinistra  -->
                 <div class="worldMap">
                     <img src="../assets/img/h5-img-2.jpg" alt="">
                 </div>
+                <!-- ***/Parte sinistra  -->
+                <!-- //Parte destra -->
                 <div class="big">
+                    <!-- //Titolo -->
                     <h1 class="bigTitle">
                         Empowering <br> Children to Reach <br> Their Potential
                     </h1>
+                    <!-- ***/Titolo -->
                     <p class="lorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos accusamus, alias
                         rerum expedita commodi illum consequuntur? Sapiente consectetur vitae repellendus facere dolorem
                         mollitia suscipit quae ducimus, quasi ab veritatis officia!</p>
+                    <!-- //Parte numeri -->
                     <div class="number">
                         <div>
                             <p class="user">168</p>
@@ -87,9 +107,13 @@ export default {
                             <p class="eventText">Events</p>
                         </div>
                     </div>
+                    <!-- ***/Parte numeri -->
                 </div>
+                <!-- ***/Parte destra -->
             </div>
+            <!-- ***/Container sezione -->
         </div>
+        <!-- ***/Sezione mappa mondo e scritta a destra  -->
     </section>
 
 </template>
@@ -256,3 +280,32 @@ export default {
     }
 }
 </style>
+
+
+<!-- export default [
+    {
+        img : "h5-custom-icon-1.png",
+        text : "Languages"
+    },
+    {
+        img : "h5-custom-icon-2.png",
+        text : "Software"
+    },
+    {
+        img : "h5-custom-icon-3.png",
+        text : "Business"
+    },
+    {
+        img : "h5-custom-icon-4.png",
+        text : "Chemistry"
+    },
+    {
+        img : "h5-custom-icon-5.png",
+        text : "Science"
+    },
+    {
+        img : "h5-custom-icon-6.png",
+        text : "DIY&Craft"
+    },
+    
+] -->

@@ -1,10 +1,10 @@
 <script>
-// import icons from '../data/icons.js'
+import icons from '../data/icon.js'
 export default {
     name: 'MainFirst',
     data() {
         return {
-            // icons: icons
+            icons: icons
         }
     }
 }
@@ -17,11 +17,11 @@ export default {
         <div class="infobar">
             <!-- //Container layout icone -->
             <div class="infoContainer">
-                <!-- <div v-for="(icon, index) in icons" :key="index" class="icons">
-                    <img :src="(`../img/${icon.img}`)" alt="">
-                    <h3> {{icon.text}} </h3>
-                 </div> -->
-                <div class="icons">
+                <div v-for="(icon, index) in icons" :key="index" class="icons">
+                    <img :src="(`/icone/${icon.img}`)" alt="">
+                    <h3> {{ icon.text }} </h3>
+                </div>
+                <!-- <div class="icons">
                     <img src="../assets/img/h5-custom-icon-1.png" alt="">
                     <h3> Languages </h3>
                 </div>
@@ -44,7 +44,7 @@ export default {
                 <div class="icons">
                     <img src="../assets/img/h5-custom-icon-6.png" alt="">
                     <h3> DIY&Craft </h3>
-                </div>
+                </div> -->
             </div>
             <!-- ***/Container layout icone -->
         </div>
@@ -282,30 +282,3 @@ export default {
 </style>
 
 
-<!-- export default [
-    {
-        img : "h5-custom-icon-1.png",
-        text : "Languages"
-    },
-    {
-        img : "h5-custom-icon-2.png",
-        text : "Software"
-    },
-    {
-        img : "h5-custom-icon-3.png",
-        text : "Business"
-    },
-    {
-        img : "h5-custom-icon-4.png",
-        text : "Chemistry"
-    },
-    {
-        img : "h5-custom-icon-5.png",
-        text : "Science"
-    },
-    {
-        img : "h5-custom-icon-6.png",
-        text : "DIY&Craft"
-    },
-    
-] -->

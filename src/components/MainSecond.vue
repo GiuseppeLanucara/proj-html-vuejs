@@ -51,37 +51,51 @@ export default {
 
 <template>
     <section>
+        <!-- //Jumbo  -->
         <div class="jumbotron">
+            <!-- Logo top a lato  -->
             <div class="top">
                 <i class="fas fa-angle-up"></i>
                 top
             </div>
+            <!-- ***/Logo top a lato  -->
+            <!-- //Container immagine testimonial -->
             <div class="testimonial">
                 <img src="../assets/img/testimonials-standard-2.png" alt="">
             </div>
+            <!-- ***/Container immagine testimonial -->
+            <!-- //Container paragrafo -->
             <div class="para">
                 <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eum praesentium aliquam
                     molestias voluptas deleniti, suscipit, maxime quo nostrum natus rem cum voluptatum repellat eligendi
                     vero cumque. Harum, inventore ex! aliquam molestias voluptas deleniti"</p>
             </div>
+            <!-- ***/Container paragrafo -->
             <div class="id">Joan Collins</div>
             <div class="position">STUDENT</div>
+            <!-- //Cerchi parte inferiore -->
             <div class="headerBottom">
                 <div v-for="n in 3" :key="n" class="cerchio">
                     {{ n.cerchio }}
                     <div class="inner"></div>
                 </div>
             </div>
+            <!-- ***/Cerchi parte inferiore -->
         </div>
+        <!-- ***/Jumbo  -->
+        <!-- //Container sezione Info -->
         <div class="info">
+            <!-- //Griglia info sinistra dinamica -->
             <div class="leftInfo">
                 <div v-for="(info, index) in informations" :key="index" class="voices">
                     <div :class="(info.status) ? 'active, test' : null"></div>
                     <p class="blueBar">{{ info.titolo }}</p>
                 </div>
             </div>
+            <!-- ***/Griglia info sinistra dinamica -->
+            <!-- //Info parte destra -->
             <div class="rightInfo">
-
+                <!-- //Container testo statico e lista dinamica -->
                 <div class="titolo">
                     <h1 class="learning">Learning Possibilities</h1>
                     <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex accusamus excepturi
@@ -91,18 +105,25 @@ export default {
                         accusantium iste modi. Adipisci facere doloremque aliquam debitis magni? Neque ullam molestias
                         mollitia ducimus deserunt eligendi assumenda porro!
                     </p>
+                    <!-- //Lista dinamica -->
                     <ul class="lista">
                         <li v-for="(objective, index) in objectives" :key="index" class="nav">
                             <i class="fas fa-check"></i>
                             {{ objective.titolo }}
                         </li>
                     </ul>
+                    <!-- ***/Lista dinamica -->
+                    <!-- //Immagine figura geometrica -->
                     <div class="square">
                         <img src="../assets/img/h12-tabs-icon-1.png" alt="">
                     </div>
+                    <!-- ***/Immagine figura geometrica -->
                 </div>
+                <!-- ***/Container testo statico e lista dinamica -->
             </div>
+            <!-- ***/Info parte destra -->
         </div>
+        <!-- ***/Container sezione Info -->
     </section>
 
 </template>

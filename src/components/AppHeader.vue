@@ -141,6 +141,12 @@ export default {
             &>img {
                 width: 100%;
             }
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.3);
+                transition: 3s;
+            }
         }
 
         ul,
@@ -151,6 +157,13 @@ export default {
             margin: 20px;
             text-transform: uppercase;
             color: white;
+
+            &:hover {
+                color: #40C4FE;
+                transform: scale(1.2);
+                transition: 2s;
+                cursor: pointer;
+            }
         }
 
         .icone {
@@ -161,6 +174,13 @@ export default {
                 margin-right: 20px;
                 font-size: 20px;
                 color: white;
+
+                &:hover {
+                    color: #40C4FE;
+                    transform: scale(1.2);
+                    transition: 2s;
+                    cursor: pointer;
+                }
             }
 
 
@@ -169,6 +189,13 @@ export default {
                 margin-right: 20px;
                 font-size: 20px;
                 color: white;
+
+                &:hover {
+                    color: #40C4FE;
+                    transform: scale(1.2);
+                    transition: 2s;
+                    cursor: pointer;
+                }
             }
 
             .cart {
@@ -184,6 +211,13 @@ export default {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                &:hover {
+                    color: #40C4FE;
+                    transform: scale(1.2);
+                    transition: 2s;
+                    cursor: pointer;
+                }
             }
 
 

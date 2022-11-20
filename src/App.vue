@@ -13,7 +13,6 @@ export default {
     MainSecond,
     MainThird,
     AppFooter,
-
   }
 }
 </script>

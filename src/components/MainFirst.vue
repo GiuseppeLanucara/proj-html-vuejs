@@ -143,6 +143,12 @@ export default {
             justify-content: center;
             align-items: center;
 
+            &:hover {
+                transform: scale(1.3);
+                transition: 2s;
+                cursor: pointer;
+            }
+
             h3 {
                 margin-top: 15px;
             }

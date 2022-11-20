@@ -248,6 +248,10 @@ export default {
                 font-weight: bold;
                 color: #B9B9B9;
                 font-size: 22px;
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
     }

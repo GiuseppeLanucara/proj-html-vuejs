@@ -15,43 +15,63 @@ export default {
 
 <template>
     <section>
+
+        <!-- //Section Container -->
         <div class="bigContainer">
+            <!-- //Background img -->
             <div class="background"></div>
+            <!-- ***/Background img -->
+
+            <!-- //Container struttura testo e cards  -->
             <div class="smallContainer">
+                <!-- //Container solo testo -->
                 <div class="text">
                     <h1>Popular Online Courses</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellat libero molestiae
                         obcaecati consequuntur laborum voluptatum, similique ipsum! Rerum ut facilis quis mollitia quasi
                         facere illum dignissimos saepe dolorum fuga?</p>
                 </div>
+                <!-- ***/Container solo testo -->
+                <!-- //Container card inserite in modo Dinamico -->
                 <div class="cardsContainer">
                     <div v-for="(card, index) in cards" :key="index" class="card">
+                        <!-- //Img dinamica cards -->
                         <div class="cardImg">
                             <img :src="(`/icone/${card.img}`)" alt="">
                         </div>
+                        <!-- ***/Img dinamica cards -->
+                        <!-- //Descrizione card dinamica -->
                         <div class="cardDescription">
+                            <!-- //InfoCard dinamica-->
                             <div class="cardInfo">
                                 <h3> {{ card.professione }} </h3>
                                 <div :class="(card.status) ? 'active' : null" class="price">
                                     {{ card.prezzo }}
                                 </div>
-
+                                <!-- ***/InfoCard dinamica-->
                             </div>
                             <p class="nome"> {{ card.nome }} </p>
                             <p class="paragrafo"> {{ card.paragrafo }} </p>
                             <p class="paragrafo"> sostituire </p>
                         </div>
+                        <!-- ***/Descrizione card dinamica -->
                         <div class="icone"></div>
                     </div>
                 </div>
+                <!-- ***/Container card inserite in modo Dinamico -->
+
+                <!-- //Bottom container cerchi -->
                 <div class="bottom">
                     <div v-for="n in 3" :key="n" class="cerchio">
                         {{ n.cerchio }}
                         <div class="inner"></div>
                     </div>
                 </div>
+                <!-- ***/Bottom container cerchi -->
             </div>
+            <!-- ***/Container struttura testo e cards  -->
         </div>
+        <!-- ***/Section Container -->
     </section>
 
 </template>

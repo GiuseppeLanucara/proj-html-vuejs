@@ -611,6 +611,12 @@ p {
 .loghi {
     width: 100%;
     margin: 0 auto;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.2);
+        transition: 2s;
+    }
 }
 
 .loghi>img {

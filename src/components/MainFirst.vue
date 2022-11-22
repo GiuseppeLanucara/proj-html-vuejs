@@ -167,7 +167,7 @@ export default {
 
     p {
         margin-top: 25px;
-        color: #B9B9B9;
+        color: #5c5b5b;
         font-size: 22px;
     }
 

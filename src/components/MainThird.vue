@@ -390,7 +390,7 @@ p {
 
 .paragrafo {
     margin-bottom: 20px;
-    color: #B9B9B9;
+    color: #5c5b5b;
     font-size: 18px;
 }
 
@@ -500,7 +500,7 @@ p {
     width: 100%;
     height: calc(100% / 8);
     border: 1px solid #EAEAEA;
-    color: #B9B9B9;
+    color: #5c5b5b;
     font-weight: bold;
 }
 
@@ -555,7 +555,7 @@ p {
     justify-content: center;
     align-items: center;
     border: 1px solid #EAEAEA;
-    color: #B9B9B9;
+    color: #5c5b5b;
 }
 
 .testi {
@@ -578,7 +578,7 @@ p {
     height: 70%;
     border: 1px solid #EAEAEA;
     text-transform: uppercase;
-    color: #B9B9B9;
+    color: #5c5b5b;
     background: white;
     display: flex;
     justify-content: center;

@@ -246,7 +246,7 @@ export default {
             .blueBar {
                 padding-left: 30px;
                 font-weight: bold;
-                color: #B9B9B9;
+                color: #5c5b5b;
                 font-size: 22px;
 
                 &:hover {
@@ -277,7 +277,7 @@ export default {
 
             .lorem {
                 margin-top: 40px;
-                color: #A8A1A2;
+                color: #5c5b5b;
                 font-size: 22px;
             }
 

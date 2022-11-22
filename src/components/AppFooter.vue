@@ -6,9 +6,9 @@ export default {
             linkSx: [
                 {
                     text: "Providing Life Changing",
-                    textUno: "Experiences Through",
-                    textDue: "Education Class That Fit your",
-                    textTre: "Busy life. closer to home",
+                    textOne: "Experiences Through",
+                    textTwo: "Education Class That Fit your",
+                    textThree: "Busy life. closer to home",
                     url: "#",
                 },
                 {
@@ -68,23 +68,32 @@ export default {
 
 <template>
     <footer>
+        <!-- //Footer Container -->
         <div class="backgroundFooter">
+            <!-- //Top icon  -->
             <div class="top-footer">
                 <i class="fas fa-angle-up"></i>
                 top
             </div>
+            <!-- /***Top icon  -->
+
+            <!-- //Lists Container  -->
             <div class="link">
+                <!-- //Container List Left -->
                 <div class="academy">
-                    <img src="../img/logo-light.png" alt="">
+                    <img src="../assets/img/logo-light.png" alt="">
                     <ul>
                         <li v-for="(link, index) in linkSx" :key="index">
                             <p> {{ link.text }} </p>
-                            <p> {{ link.textUno }} </p>
-                            <p> {{ link.textDue }} </p>
-                            <p> {{ link.textTre }} </p>
+                            <p> {{ link.textOne }} </p>
+                            <p> {{ link.textTwo }} </p>
+                            <p> {{ link.textThree }} </p>
                         </li>
                     </ul>
                 </div>
+                <!-- ***/Container List Left -->
+
+                <!-- //Container List Center -->
                 <div class="courses">
                     <h1>Popular courses</h1>
                     <ul>
@@ -94,6 +103,9 @@ export default {
                         </li>
                     </ul>
                 </div>
+                <!-- ***/Container List Center -->
+
+                <!-- //Container List Right -->
                 <div class="support">
                     <h1>Support</h1>
                     <ul>
@@ -102,11 +114,18 @@ export default {
                         </li>
                     </ul>
                 </div>
+                <!-- ***/Container List Right -->
+
+                <!-- //Img map container -->
                 <div class="learning">
                     <h1>Flexible Learning</h1>
                     <img src="../assets/img/footer-img-1.png" alt="">
                 </div>
+                <!-- ***/Img map container -->
             </div>
+            <!-- ***/Lists Container  -->
+
+            <!-- //Container bottom footer contacts -->
             <div class="footerBottom">
                 <div class="copy">
                     <p>Copyrights 2017 ©Mikado Themes</p>
@@ -121,7 +140,9 @@ export default {
                     </div>
                 </div>
             </div>
+            <!-- ***/Container bottom footer contacts -->
         </div>
+        <!-- ***/Footer Container -->
     </footer>
 
 </template>
